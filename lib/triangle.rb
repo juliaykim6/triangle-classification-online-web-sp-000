@@ -8,15 +8,15 @@ class Triangle
      @h = height
    end
 
-   def kind 
+   def kind
      validate_triangle
      if a == b && b = c
        :equilateral
      elsif a == b || b == c || a == c
        :isosceles
-     else 
+     else
        "scalene"
-     end 
+     end
    end
 
    class TriangleError < StandardError
