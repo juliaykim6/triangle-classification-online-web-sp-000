@@ -1,6 +1,6 @@
 class Triangle
 
-   attr_readerß :l, :w, :h
+   attr_reader :l, :w, :h
 
    def initialize(l, w, h)
      @l = length
