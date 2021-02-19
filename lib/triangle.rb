@@ -3,9 +3,9 @@ class Triangle
    attr_reader :l, :w, :h
 
    def initialize(l, w, h)
-     @l = length
-     @w = width
-     @h = height
+     @l = l
+     @w = w
+     @h = h
    end
 
    def kind
