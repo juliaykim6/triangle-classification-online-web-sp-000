@@ -15,7 +15,7 @@ class Triangle
      elsif l == w || w == h || l == h
        :isosceles
      else
-       "scalene"
+       :scalene
      end
    end
 
