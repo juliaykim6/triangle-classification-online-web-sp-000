@@ -7,4 +7,11 @@ class Triangle
      @width = width
      @height = height
    end
+
+   class TriangleError < StandardError
+     if triangle.class != TriangleError
+       raise StandardError
+     else
+       triangle, = self
+     end
    end
