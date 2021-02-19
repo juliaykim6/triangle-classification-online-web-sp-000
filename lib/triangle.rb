@@ -20,10 +20,4 @@ class Triangle
    end
 
    class TriangleError < StandardError
-     self.
-     if triangle.class != TriangleError
-       raise StandardError
-     else
-       triangle. = self
-     end
    end
