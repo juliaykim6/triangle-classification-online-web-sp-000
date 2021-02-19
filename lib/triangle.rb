@@ -1,17 +1,29 @@
 class Triangle
 
-   attr_accessor :equilateral, :isosceles, :scalene
+   attr_accessor :l, :w, :h
 
-   def initialize(lenght, width, height)
-     @length = length
-     @width = width
-     @height = height
+   def initialize(l, w, h)
+     @l = length
+     @w = width
+     @h = height
+   end
+
+   def kind 
+     validate_triangle
+     if a == b && b = c
+       :equilateral
+     elsif a == b || b == c || a == c
+       :isosceles
+     else 
+       "scalene"
+     end 
    end
 
    class TriangleError < StandardError
+     self.
      if triangle.class != TriangleError
        raise StandardError
      else
-       triangle, = self
+       triangle. = self
      end
    end
