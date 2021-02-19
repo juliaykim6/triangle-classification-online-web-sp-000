@@ -10,9 +10,9 @@ class Triangle
 
    def kind
      validate_triangle
-     if a == b && b = c
+     if l == w && w = h
        :equilateral
-     elsif a == b || b == c || a == c
+     elsif l == w || w == h || l == h
        :isosceles
      else
        "scalene"
