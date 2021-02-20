@@ -1,17 +1,17 @@
 class Triangle
 
-  attr_accessor :side1, :side2, :side3
+  attr_accessor :1, :2, :3
 
     def initialize(side1, side2, side3)
-      @side1 = side1
-      @side2 = side2
-      @side3 = side3
+      @1 = 1
+      @2 = 2
+      @3 = 3
 
     end
 
     def valid_triangle?
-      real_triangle = [(side1 < side2 + side3), (side2 < side1 + side3), (side3 < side2 + side1)]
-      [side1, side2, side3].each{|side| real_triangle << false if side <= 0}
+      real_triangle = [(1 < 2 + 3), (2 < 1 + 3), (3 < 2 + 1)]
+      [1, 2, 3].each{|side| real_triangle << false if side <= 0}
       raise TriangleError if real_triangle.include?(false)
 
     end
@@ -21,9 +21,9 @@ class Triangle
 
     def kind
       valid_triangle?
-      if side1 == side2 && side1 == side3
+      if 1 == 2 && 1 == 3
         :equilateral
-      elsif side1 == side2 || side2 == side3 || side1 == side3
+      elsif 1 == 2 || 2 == 3 || 1 == 3
         :isosceles
       else
         :scalene
