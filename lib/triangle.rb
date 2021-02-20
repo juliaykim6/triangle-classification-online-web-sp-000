@@ -19,7 +19,7 @@ class Triangle
      end
    end
 
-   def validate_trinagle
+   def validate_trinagle?
      real_triangle = [(l + w > h), (l + h > w), (w + h > l)]
      [l, w, h].each do |side|
        real_triangle << false if side <= 0
