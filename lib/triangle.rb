@@ -19,7 +19,7 @@ class Triangle
 
    class TriangleError < StandardError
    end
-   
+
      def kind
        validate_triangle
        if l == w && w = h
