@@ -8,16 +8,6 @@ class Triangle
      @h = h
    end
 
-   def kind
-     validate_triangle
-     if l == w && w = h
-       :equilateral
-     elsif l == w || w == h || l == h
-       :isosceles
-     else
-       :scalene
-     end
-   end
 
    def validate_trinagle?
      real_triangle = [(l + w > h), (l + h > w), (w + h > l)]
@@ -28,6 +18,16 @@ class Triangle
    end
 
    class TriangleError < StandardError
+     def kind
+       validate_triangle
+       if l == w && w = h
+         :equilateral
+       elsif l == w || w == h || l == h
+         :isosceles
+       else
+         :scalene
+       end
+     end
    end
 
 end
