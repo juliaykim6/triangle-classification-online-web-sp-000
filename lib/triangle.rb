@@ -2,7 +2,7 @@ class Triangle
 
   attr_accessor :1, :2, :3
 
-    def initialize(side1, side2, side3)
+    def initialize(1, 2, 3)
       @1 = 1
       @2 = 2
       @3 = 3
